@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Better Work Momentum</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+    p, li { font-size: 0.97rem; }
+    ul { padding-left: 20px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
+    a { color: #0a66c2; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Better Work Momentum &nbsp;·&nbsp; Last updated: March 15, 2025</p>
+
+<p>Better Work Momentum ("we," "our," or "the extension") is a Chrome extension that helps job seekers draft LinkedIn comments using AI. This policy explains what data we handle, how we handle it, and your rights.</p>
+
+<h2>1. What Data We Collect</h2>
+
+<p>We collect the minimum data necessary to provide the service:</p>
+
+<ul>
+  <li><strong>Access token.</strong> A bearer token you paste into the extension. It is stored locally in your browser using Chrome's <code>chrome.storage.local</code> API and is never transmitted except as an authentication header to our backend API.</li>
+  <li><strong>LinkedIn post text.</strong> When you click "Use this post," the visible text of that post is sent to our backend to generate comment drafts. We do not store the raw post text. A one-way hash (HMAC-SHA256) of the post text is written to our telemetry log for usage analytics only.</li>
+  <li><strong>Resume and LinkedIn profile PDFs (optional).</strong> If you choose to upload a PDF, it is transmitted to our backend, parsed to extract structured professional information, and then <strong>permanently deleted from our servers</strong>. The raw PDF and raw extracted text are never stored after the extraction step completes.</li>
+  <li><strong>Structured profile data.</strong> The structured information extracted from your PDF (job titles, employers, skills, highlights) is stored locally in your browser via <code>chrome.storage.local</code>. A one-way hash (HMAC-SHA256) of this profile is written to our telemetry log. The raw profile content is never stored on our servers.</li>
+  <li><strong>User preferences.</strong> Tone, writing style, target role, target industry, and experience snippets are stored locally in your browser via <code>chrome.storage.local</code>. These are never transmitted to our servers.</li>
+  <li><strong>Telemetry.</strong> Each API request generates a telemetry record containing: a hashed user identifier, a hashed post identifier, a hashed profile identifier, the model tier used, latency in milliseconds, token count, and a timestamp. All identifying fields are one-way hashed using HMAC-SHA256 with a server-side salt. No raw text of any kind is included in telemetry records.</li>
+</ul>
+
+<h2>2. How We Store Data</h2>
+
+<ul>
+  <li><strong>Local browser storage.</strong> Your access token, profile data, and preferences are stored on your device only, using Chrome's <code>chrome.storage.local</code> API. We cannot access this data remotely.</li>
+  <li><strong>Server-side storage.</strong> Our backend uses Microsoft Azure Table Storage. We store: quota and rate-limit counters keyed to your hashed token, and telemetry records as described above. No raw personal data is stored server-side.</li>
+  <li><strong>Telemetry retention.</strong> Telemetry records are partitioned by date and are deleted on a rolling 90-day cycle.</li>
+</ul>
+
+<h2>3. PDF Handling</h2>
+
+<p>When you upload a resume or LinkedIn profile PDF:</p>
+<ol>
+  <li>The file is transmitted over HTTPS to our Azure backend.</li>
+  <li>The file is temporarily written to Azure Blob Storage (container: <code>pdf-temp</code>) for processing.</li>
+  <li>Text is extracted from the PDF and sent to an AI model (Azure OpenAI) to produce a structured profile.</li>
+  <li>The PDF file is <strong>permanently deleted from Blob Storage</strong> immediately after extraction completes — whether extraction succeeds or fails.</li>
+  <li>The raw extracted text is discarded after the structured profile is returned.</li>
+</ol>
+
+<p>We do not retain, sell, or share your resume or LinkedIn PDF content.</p>
+
+<h2>4. AI Processing</h2>
+
+<p>Comment drafts and profile extraction are processed using Azure OpenAI (GPT-4o), hosted on Microsoft Azure in the United States. Post text and extracted profile content are transmitted to this service for processing. Microsoft's data handling practices for Azure OpenAI apply; by default, Azure OpenAI does not use submitted data to train or improve models.</p>
+
+<h2>5. Data Sharing</h2>
+
+<p>We do not sell, rent, or share your data with third parties for advertising or marketing purposes. Data is shared only with:</p>
+<ul>
+  <li><strong>Microsoft Azure</strong> — for backend computation, storage, and AI inference, as described above.</li>
+</ul>
+
+<h2>6. Your Rights</h2>
+
+<ul>
+  <li><strong>Access and deletion.</strong> Because all identifying data is hashed before server-side storage, we cannot reconstruct or retrieve your personal information from our servers. Your locally stored data (token, profile, preferences) can be deleted at any time by uninstalling the extension or clearing your browser's extension storage.</li>
+  <li><strong>Opting out.</strong> You may use the extension without uploading a PDF. Profile-based personalization is entirely optional.</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+
+<p>Better Work Momentum is intended for adults engaged in professional job seeking. We do not knowingly collect data from anyone under the age of 13.</p>
+
+<h2>8. Changes to This Policy</h2>
+
+<p>We may update this policy as the product evolves. The "Last updated" date at the top of this page will reflect any changes. Continued use of the extension after a policy update constitutes acceptance of the revised policy.</p>
+
+<h2>9. Contact</h2>
+
+<p>Questions about this privacy policy? Contact us at <a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a>.</p>
+
+</body>
+</html>
