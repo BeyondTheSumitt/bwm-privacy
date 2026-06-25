@@ -24,7 +24,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Better Work Momentum &nbsp;·&nbsp; Last updated: March 15, 2025</p>
+<p class="meta">Better Work Momentum &nbsp;·&nbsp; Last updated: June 25, 2026</p>
 
 <p>Better Work Momentum ("we," "our," or "the extension") is a Chrome extension that helps job seekers draft LinkedIn comments using AI. This policy explains what data we handle, how we handle it, and your rights.</p>
 
@@ -64,7 +64,7 @@
 
 <h2>4. AI Processing</h2>
 
-<p>Comment drafts and profile extraction are processed using Azure OpenAI (GPT-4o), hosted on Microsoft Azure in the United States. Post text and extracted profile content are transmitted to this service for processing. Microsoft's data handling practices for Azure OpenAI apply; by default, Azure OpenAI does not use submitted data to train or improve models.</p>
+<p>Comment drafts and profile extraction are processed using Azure OpenAI, hosted on Microsoft Azure in the United States. Post text and extracted profile content are transmitted to this service for processing. Microsoft's data handling practices for Azure OpenAI apply; by default, Azure OpenAI does not use submitted data to train or improve models.</p>
 
 <h2>5. Data Sharing</h2>
 
@@ -80,15 +80,31 @@
   <li><strong>Opting out.</strong> You may use the extension without uploading a PDF. Profile-based personalization is entirely optional.</li>
 </ul>
 
-<h2>7. Children's Privacy</h2>
+<h2>7. Chrome Extension Permissions</h2>
+
+<p>Better Work Momentum requests the following Chrome permissions. We request only what is necessary for the extension to function:</p>
+
+<ul>
+  <li><strong><code>activeTab</code>.</strong> Read the LinkedIn post on your currently active tab to generate comment drafts.</li>
+  <li><strong><code>storage</code>.</strong> Save your access token, profile data, and preferences locally on your device.</li>
+  <li><strong><code>contextMenus</code>.</strong> Add the right-click "Use this post" option on LinkedIn pages.</li>
+  <li><strong><code>sidePanel</code>.</strong> Display the BWM panel alongside LinkedIn in your browser.</li>
+  <li><strong><code>tabs</code>.</strong> Detect when you navigate to LinkedIn so the extension knows when to activate.</li>
+  <li><strong><code>scripting</code>.</strong> Inject the content reader into LinkedIn pages to extract post text.</li>
+  <li><strong><code>host_permissions: linkedin.com</code>.</strong> Limit the extension's activity to LinkedIn only — it does not operate on any other website.</li>
+</ul>
+
+<p><strong>A note on Chrome's "Read your browsing history" warning.</strong> When you install Better Work Momentum, Chrome may display a warning that says "Read your browsing history." This is Chrome's generic label for any extension that uses the <code>tabs</code> permission - it does not mean BWM reads, records, stores, or transmits your browsing history. The <code>tabs</code> permission is used solely to detect when you are viewing a LinkedIn page so the extension can activate. BWM has no visibility into your activity on any other site.</p>
+
+<h2>8. Children's Privacy</h2>
 
 <p>Better Work Momentum is intended for adults engaged in professional job seeking. We do not knowingly collect data from anyone under the age of 13.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>9. Changes to This Policy</h2>
 
 <p>We may update this policy as the product evolves. The "Last updated" date at the top of this page will reflect any changes. Continued use of the extension after a policy update constitutes acceptance of the revised policy.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 
 <p>Questions about this privacy policy? Contact us at <a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a>.</p>
 
