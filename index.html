@@ -64,7 +64,7 @@
 
 <h2>4. AI Processing</h2>
 
-<p>Comment drafts and profile extraction are processed using Azure OpenAI, hosted on Microsoft Azure in the United States. Post text and extracted profile content are transmitted to this service for processing. Microsoft's data handling practices for Azure OpenAI apply; by default, Azure OpenAI does not use submitted data to train or improve models.</p>
+<p>Comment drafts and profile extraction are processed using Azure OpenAI (GPT-4o), hosted on Microsoft Azure in the United States. Post text and extracted profile content are transmitted to this service for processing. Microsoft's data handling practices for Azure OpenAI apply; by default, Azure OpenAI does not use submitted data to train or improve models.</p>
 
 <h2>5. Data Sharing</h2>
 
@@ -82,19 +82,18 @@
 
 <h2>7. Chrome Extension Permissions</h2>
 
-<p>Better Work Momentum requests the following Chrome permissions. We request only what is necessary for the extension to function:</p>
+<p>Better Work Momentum requests only the permissions necessary to function. Here is what each one does:</p>
 
 <ul>
-  <li><strong><code>activeTab</code>.</strong> Read the LinkedIn post on your currently active tab to generate comment drafts.</li>
-  <li><strong><code>storage</code>.</strong> Save your access token, profile data, and preferences locally on your device.</li>
-  <li><strong><code>contextMenus</code>.</strong> Add the right-click "Use this post" option on LinkedIn pages.</li>
-  <li><strong><code>sidePanel</code>.</strong> Display the BWM panel alongside LinkedIn in your browser.</li>
-  <li><strong><code>tabs</code>.</strong> Detect when you navigate to LinkedIn so the extension knows when to activate.</li>
-  <li><strong><code>scripting</code>.</strong> Inject the content reader into LinkedIn pages to extract post text.</li>
-  <li><strong><code>host_permissions: linkedin.com</code>.</strong> Limit the extension's activity to LinkedIn only — it does not operate on any other website.</li>
+  <li><strong>Read the current LinkedIn post.</strong> When you use the extension on a LinkedIn post, it reads the visible text of that post to generate comment drafts. It does not read any other content on the page.</li>
+  <li><strong>Save your settings locally.</strong> Your access token, profile data, and preferences are saved directly on your device. We cannot access this data remotely.</li>
+  <li><strong>Add a right-click option.</strong> A "Use this post" option is added to your right-click menu when you are on LinkedIn.</li>
+  <li><strong>Display the side panel.</strong> The BWM panel opens alongside LinkedIn in your browser window.</li>
+  <li><strong>Detect LinkedIn pages.</strong> The extension checks whether you are on LinkedIn so it knows when to activate. It does not monitor or record your activity on any other site.</li>
+  <li><strong>LinkedIn only.</strong> Better Work Momentum operates exclusively on linkedin.com. It has no access to any other website you visit.</li>
 </ul>
 
-<p><strong>A note on Chrome's "Read your browsing history" warning.</strong> When you install Better Work Momentum, Chrome may display a warning that says "Read your browsing history." This is Chrome's generic label for any extension that uses the <code>tabs</code> permission - it does not mean BWM reads, records, stores, or transmits your browsing history. The <code>tabs</code> permission is used solely to detect when you are viewing a LinkedIn page so the extension can activate. BWM has no visibility into your activity on any other site.</p>
+<p><strong>A note on Chrome's "Read your browsing history" warning.</strong> When you install Better Work Momentum, Chrome may display a warning that says "Read your browsing history." This is Chrome's generic label for any extension that uses the <code>tabs</code> permission — it does not mean BWM reads, records, stores, or transmits your browsing history. The <code>tabs</code> permission is used solely to detect when you are viewing a LinkedIn page so the extension can activate. BWM has no visibility into your activity on any other site.</p>
 
 <h2>8. Children's Privacy</h2>
 
