@@ -1,108 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Better Work Momentum</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 0 24px;
-      color: #1a1a1a;
-      line-height: 1.7;
-    }
-    h1 { font-size: 1.8rem; margin-bottom: 4px; }
-    h2 { font-size: 1.15rem; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
-    p, li { font-size: 0.97rem; }
-    ul { padding-left: 20px; }
-    .meta { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
-    a { color: #0a66c2; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Better Work Momentum — Privacy Policy</title>
+<style>
+  :root {
+    --ink: #161513;
+    --muted: #5c5852;
+    --line: #e6e1d8;
+    --accent: #2F7D5B;
+    --surface: #ffffff;
+    --page: #faf8f4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 28px;
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); margin: 0; font-size: 16px; }
+  h2 {
+    font-size: 22px;
+    margin: 44px 0 12px;
+    letter-spacing: -0.005em;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 28px 0 8px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 20px;
+    font-size: 15.5px;
+  }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: 11px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  th { background: var(--surface); font-weight: 600; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 15px;
+  }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 14.5px;
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Privacy Policy</h1>
-<p class="meta">Better Work Momentum &nbsp;·&nbsp; Last updated: June 25, 2026</p>
+<header>
+  <h1>Better Work Momentum — Privacy Policy</h1>
+  <p class="sub">Last updated: August 1, 2026</p>
+</header>
 
-<p>Better Work Momentum ("we," "our," or "the extension") is a Chrome extension that helps job seekers draft LinkedIn comments using AI. This policy explains what data we handle, how we handle it, and your rights.</p>
+<p>Better Work Momentum is a Chrome extension that helps job seekers write better
+LinkedIn comments. This policy explains, in plain English, what information the
+extension handles, where that information goes, how long it stays there, and what
+you can do about it.</p>
 
-<h2>1. What Data We Collect</h2>
+<p>We have tried to keep this short and specific. If anything here is unclear,
+email us at <a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a> and we
+will answer.</p>
 
-<p>We collect the minimum data necessary to provide the service:</p>
+<div class="callout">
+  <p><strong>The short version.</strong> We do not sell your data. We do not run
+  ads. We do not post anything to LinkedIn on your behalf. Your resume file is
+  deleted from our servers as soon as we have read it. Your LinkedIn analytics
+  numbers never leave your browser. The things we do keep on our servers are
+  listed below, item by item.</p>
+</div>
 
-<ul>
-  <li><strong>Access token.</strong> A token you paste into the extension to activate your account. It is stored locally in your browser and is never transmitted except to verify your identity with our backend.</li>
-  <li><strong>LinkedIn post text.</strong> When you click "Use this post," the visible text of that post is sent to our backend to generate comment drafts. We do not store the raw post text. A non-reversible fingerprint of the post is recorded in our usage log for analytics only.</li>
-  <li><strong>Resume and LinkedIn profile PDFs (optional).</strong> If you choose to upload a PDF, it is transmitted to our backend, parsed to extract structured professional information, and then <strong>permanently deleted from our servers</strong>. The raw PDF and raw extracted text are never stored after the extraction step completes.</li>
-  <li><strong>Structured profile data.</strong> The structured information extracted from your PDF (job titles, employers, skills, highlights) is stored locally in your browser. A non-reversible fingerprint of this profile is recorded in our usage log. The raw profile content is never stored on our servers.</li>
-  <li><strong>User preferences.</strong> Tone, writing style, target role, target industry, and experience snippets are stored locally in your browser. These are never transmitted to our servers.</li>
-  <li><strong>Usage data.</strong> Each request generates a usage record containing: a non-reversible identifier for your account, a non-reversible identifier for the post, the service tier used, response time, and a timestamp. No raw text of any kind is included in usage records.</li>
-</ul>
+<h2>Who we are</h2>
 
-<h2>2. How We Store Data</h2>
+<p>Better Work Momentum is operated by Beyond The Sumitt. You can reach us at
+<a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a>.</p>
 
-<ul>
-  <li><strong>Local browser storage.</strong> Your access token, profile data, and preferences are stored on your device only. We cannot access this data remotely.</li>
-  <li><strong>Server-side storage.</strong> Our backend stores usage counters and the usage records described above. No raw personal data is stored server-side.</li>
-  <li><strong>Usage data retention.</strong> Usage records are deleted on a rolling 90-day cycle.</li>
-</ul>
+<h2>What the extension collects</h2>
 
-<h2>3. PDF Handling</h2>
+<p>It is easiest to think about this in two buckets: things that stay on your
+computer, and things that reach our servers.</p>
 
-<p>When you upload a resume or LinkedIn profile PDF:</p>
-<ol>
-  <li>The file is transmitted securely to our backend servers.</li>
-  <li>The file is held temporarily in secure cloud storage for processing only.</li>
-  <li>Text is extracted from the PDF and processed by an AI model to produce a structured profile.</li>
-  <li>The PDF file is <strong>permanently deleted from our servers</strong> immediately after extraction completes — whether extraction succeeds or fails.</li>
-  <li>The raw extracted text is discarded after the structured profile is returned.</li>
-</ol>
-
-<p>We do not retain, sell, or share your resume or LinkedIn PDF content.</p>
-
-<h2>4. AI Processing</h2>
-
-<p>Comment drafts and profile extraction are processed using a cloud-hosted AI service operating in the United States. Post text and extracted profile content are transmitted to this service for processing. By default, our AI provider does not use submitted data to train or improve its models.</p>
-
-<h2>5. Data Sharing</h2>
-
-<p>We do not sell, rent, or share your data with third parties for advertising or marketing purposes. Data is shared only with our cloud infrastructure provider, which handles backend computation, storage, and AI processing as described above.</p>
-
-<h2>6. Your Rights</h2>
+<h3>Stays on your computer only</h3>
 
 <ul>
-  <li><strong>Access and deletion.</strong> Because all identifying data is converted to non-reversible fingerprints before server-side storage, we cannot reconstruct or retrieve your personal information from our servers. Your locally stored data (token, profile, preferences) can be deleted at any time by uninstalling the extension or clearing your browser's extension storage.</li>
-  <li><strong>Opting out.</strong> You may use the extension without uploading a PDF. Profile-based personalization is entirely optional.</li>
+  <li><strong>Your access token.</strong> The token your coach gives you is stored
+  in Chrome's local extension storage on your device. It is sent to our servers
+  only as an authorization header when the extension makes a request, and we store
+  only a non-reversible hash of it, never the token itself.</li>
+
+  <li><strong>Your extracted profile.</strong> The skills, titles, industries, and
+  experience we pull out of your resume are written to local storage in your
+  browser and used to make your comment drafts sound like you.</li>
+
+  <li><strong>Your LinkedIn analytics snapshots.</strong> When you click "Capture
+  analytics," the extension reads your own profile view count and search appearance
+  count from your own LinkedIn analytics pages and saves them locally so the
+  dashboard can chart your trend. <strong>These numbers are never uploaded.</strong>
+  Our servers record only a yes/no flag that a capture happened, so the
+  onboarding checklist can mark that step complete.</li>
+
+  <li><strong>Your interface state.</strong> Which sections you have unlocked, which
+  tips you have dismissed, and similar preferences.</li>
 </ul>
 
-<h2>7. Chrome Extension Permissions</h2>
+<h3>Reaches our servers</h3>
 
-<p>Better Work Momentum requests only the permissions necessary to function. Here is what each one does:</p>
+<table>
+  <tr><th>What</th><th>Why</th><th>How long we keep it</th></tr>
+
+  <tr>
+    <td>Your resume file, when you upload it</td>
+    <td>To extract your professional background so drafts sound like you</td>
+    <td>Deleted immediately after the text is extracted. The file itself is never
+    stored.</td>
+  </tr>
+
+  <tr>
+    <td>The text of the LinkedIn post you are commenting on</td>
+    <td>Sent to Azure OpenAI to generate your five comment drafts</td>
+    <td>We do not retain it. Microsoft holds it for up to 30 days for abuse
+    screening — see below.</td>
+  </tr>
+
+  <tr>
+    <td>Your target roles, industries, and companies</td>
+    <td>To build your targeting plan and account recommendations</td>
+    <td>While your account is active</td>
+  </tr>
+
+  <tr>
+    <td>People you add to "My Targets" — their name, headline or title, company,
+    LinkedIn profile URL, and the persona category you assign them</td>
+    <td>So your target list is available across sessions and devices, and so
+    recommendations do not repeat people you already track</td>
+    <td>While your account is active. See the section below.</td>
+  </tr>
+
+  <tr>
+    <td>A record of comments you generate and insert — including the draft text and
+    the post it related to</td>
+    <td>To count your weekly activity, calculate your momentum score, and improve
+    draft quality</td>
+    <td>Rolling 90-day cycle</td>
+  </tr>
+
+  <tr>
+    <td>Your progress state — which milestones you have completed, your tier, your
+    weekly commitment mode and target</td>
+    <td>So your unlocks and goals follow you if you reinstall or switch computers</td>
+    <td>While your account is active</td>
+  </tr>
+
+  <tr>
+    <td>Basic usage and error telemetry — which features were used, when, and
+    whether a request succeeded</td>
+    <td>To keep the service working and to find bugs</td>
+    <td>Rolling 90-day cycle</td>
+  </tr>
+</table>
+
+<p>Every record above is tied to a non-reversible identifier derived from your
+access token, not to your name or email address. We do not ask you for your name,
+your email address, or your LinkedIn login, and the extension never sees your
+LinkedIn password.</p>
+
+<h2>About the people you add to My Targets</h2>
+
+<p>When you add someone to your target list, we save four things from their public
+LinkedIn profile — name, title, company, and profile URL — plus the persona
+category you picked. That is how your list stays available and how the dashboard
+groups it.</p>
+
+<p>We never contact these people, and we never sell or share their information. We
+do not collect anything private about them: no email, no phone number, no messages,
+nothing behind a login.</p>
+
+<p>Remove someone from your list and their record goes with them.</p>
+
+<h2>What the extension does not do</h2>
 
 <ul>
-  <li><strong>Read the current LinkedIn post.</strong> When you use the extension on a LinkedIn post, it reads the visible text of that post to generate comment drafts. It does not read any other content on the page.</li>
-  <li><strong>Save your settings locally.</strong> Your access token, profile data, and preferences are saved directly on your device. We cannot access this data remotely.</li>
-  <li><strong>Add a right-click option.</strong> A "Use this post" option is added to your right-click menu when you are on LinkedIn.</li>
-  <li><strong>Display the side panel.</strong> The BWM panel opens alongside LinkedIn in your browser window.</li>
-  <li><strong>Detect LinkedIn pages.</strong> The extension checks whether you are on LinkedIn so it knows when to activate. It does not monitor or record your activity on any other site.</li>
-  <li><strong>LinkedIn only.</strong> Better Work Momentum operates exclusively on linkedin.com. It has no access to any other website you visit.</li>
+  <li>It never posts, likes, comments, connects, follows, or messages on LinkedIn
+  for you. Every draft is copied by you and posted by you.</li>
+  <li>It never reads any website other than LinkedIn.com. It is completely inert
+  everywhere else.</li>
+  <li>It never reads your browsing history.</li>
+  <li>It never sells or rents data to anyone, and there are no advertising or
+  analytics trackers in the extension.</li>
+  <li>It never uses your data to determine creditworthiness or for lending.</li>
 </ul>
 
-<p><strong>A note on Chrome's "Read your browsing history" warning.</strong> When you install Better Work Momentum, Chrome may display a warning that says "Read your browsing history." This is Chrome's generic label for extensions that need to detect which site you are on — it does not mean BWM reads, records, stores, or transmits your browsing history. This capability is used solely to detect when you are viewing a LinkedIn page so the extension can activate. BWM has no visibility into your activity on any other site.</p>
+<h2>About that "Read your browsing history" warning</h2>
 
-<h2>8. Children's Privacy</h2>
+<p>When you install Better Work Momentum, Chrome may warn you that the extension
+can "read your browsing history." That wording is Chrome's, not ours, and it is
+the same message shown for any extension that uses the <code>tabs</code>
+permission.</p>
 
-<p>Better Work Momentum is intended for adults engaged in professional job seeking. We do not knowingly collect data from anyone under the age of 13.</p>
+<p>Here is what we actually use it for. The extension needs to know when the tab
+you are on is a LinkedIn profile page, so it can enable the "Add to My Targets"
+button for that specific profile. It also uses it during the "Capture analytics"
+action, where it sends your existing LinkedIn tab to your own analytics pages,
+reads your two numbers, and returns the tab to where it was.</p>
 
-<h2>9. Changes to This Policy</h2>
+<p>The extension only has access to LinkedIn.com pages — that is the only host
+permission it requests — so there is no browsing history for it to read. It cannot
+see your other tabs' contents, and it does not record, store, or transmit any list
+of pages you have visited.</p>
 
-<p>We may update this policy as the product evolves. The "Last updated" date at the top of this page will reflect any changes. Continued use of the extension after a policy update constitutes acceptance of the revised policy.</p>
+<h2>Who else sees your data</h2>
 
-<h2>10. Contact</h2>
+<p>We use one service provider, and nothing else: <strong>Microsoft Azure</strong>.
+Azure hosts our backend and stores the data listed in the table above, and
+<strong>Azure OpenAI Service</strong> generates your comment drafts from the post
+text and the relevant parts of your professional background. Both run in Microsoft
+data centres in the United States.</p>
 
-<p>Questions about this privacy policy? Contact us at <a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a>.</p>
+<p>Microsoft does not use content submitted to Azure OpenAI Service to train or
+improve any models, including its own or OpenAI's. Your post text and profile
+details are used to produce your drafts and nothing else.</p>
 
+<p>As part of Azure OpenAI Service, Microsoft stores the text sent for generation
+and the drafts returned for <strong>up to 30 days</strong>, so that automated
+systems can screen for abuse of the service. Content is reviewed by a Microsoft
+employee only if those automated systems flag it. Microsoft deletes it after 30
+days. This is Microsoft's process, not ours — we do not keep a copy of the post
+text on our own servers.</p>
+
+<p>We may also disclose information if we are legally required to, or to protect
+the safety and rights of our users. If Beyond The Sumitt is ever acquired, your
+data may transfer as part of that transaction, and we will say so here before it
+happens.</p>
+
+<p>If your access token came from a coach, your coach can see that a token they
+issued is active and how much aggregate activity it has. Your coach does not see
+the text of your comments or the contents of your resume.</p>
+
+<h2>Security</h2>
+
+<p>All traffic between the extension and our servers runs over HTTPS. Access tokens
+are stored as one-way hashes, so a copy of our database does not yield a working
+token. Secrets are held in Azure Key Vault and our services authenticate to each
+other using managed identities rather than shared passwords. Access to production
+data is limited to the people who operate the service.</p>
+
+<p>No system is perfectly secure, and we will not claim otherwise. If we ever
+become aware of a breach affecting your data, we will notify affected users.</p>
+
+<h2>Your choices</h2>
+
+<ul>
+  <li><strong>See what we have.</strong> Email us and we will send you the records
+  associated with your token.</li>
+  <li><strong>Delete it.</strong> Email us and we will delete your server-side data,
+  including your target list. To clear the local side, remove the extension from
+  Chrome — that erases everything it stored on your device.</li>
+  <li><strong>Stop uploading anything new.</strong> Uninstalling the extension ends
+  all data collection immediately.</li>
+</ul>
+
+<p>Requests go to
+<a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a> and we aim to
+respond within 30 days.</p>
+
+<h2>Children</h2>
+
+<p>Better Work Momentum is intended for adult job seekers. It is not directed at
+anyone under 16, and we do not knowingly collect information from anyone under 16.
+If you believe a minor has used the extension, contact us and we will delete the
+records.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If we change what we collect or what we do with it, we will update this page and
+change the "Last updated" date at the top. Material changes will also be announced
+in the extension itself.</p>
+
+<footer>
+  <p>Better Work Momentum is a product of Beyond The Sumitt.<br />
+  Questions or requests:
+  <a href="mailto:bwm.support@gmail.com">bwm.support@gmail.com</a></p>
+</footer>
+
+</div>
 </body>
 </html>
